@@ -10,7 +10,7 @@ public class Sum {
 		s2= scanner.next();
 		a= Integer.parseInt(s1);
 		b= Integer.parseInt(s2);
-		int c= a+b;
+		
 		
 		System.out.printf("두수의 합은 %d" ,a+b);
 		scanner.close();
