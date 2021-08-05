@@ -1,6 +1,7 @@
 import java.util.Scanner;
-public class Calendar {
-	private static final int[] MAX= {31, 28, 31, 30, 31, 30 , 31,31,30,31,30,31};
+public class MaxDays {
+	private static final int[] MAX= 
+		{31, 28, 31, 30, 31, 30 , 31,31,30,31,30,31}; //배열={}
 	public int getMaxDays(int month) {
 		return MAX[month-1];
 	}
@@ -18,8 +19,8 @@ public class Calendar {
 		
 		//원하는 입력횟수를 먼저 입력받는다.
 		Scanner scanner= new Scanner(System.in);
-		Calendar cal = new Calendar();
-		System.out.printf("give input times \n");
+		MaxDays cal = new MaxDays();
+		System.out.printf("give number of inputs \n");
 		String s1= scanner.next();
 		int times = Integer.parseInt(s1);
 		
